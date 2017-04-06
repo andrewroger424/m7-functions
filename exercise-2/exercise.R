@@ -2,10 +2,13 @@
 
 # Write a function `CompareLength` that takes in 2 vectors, and returns the sentence:
 # "The difference in lengths is N"
-
+CompareLength <- function(a,b){
+  length.difference <- (length(a)-length(b))
+  return(length.difference)
+}
 
 # Pass two vectors of different length to your `CompareLength` function
-
+CompareLength(c(1,2,3,4,5),c(1,2,3))
 
 # Write a function `DescribeDifference` that will return one of the following statements:
 # "Your first vector is longer by N elements"
